@@ -1,7 +1,6 @@
 import math
 from scipy.stats import norm
 def put(S, K, T, R, sd):
-    # Adjusted d1 formula to include the dividend yield (q)
     d1 = (math.log(S/K) + (R  + 0.5 * sd**2) * T) / (sd * math.sqrt(T))
     d2 = d1 - sd * math.sqrt(T)
 
@@ -10,7 +9,6 @@ def put(S, K, T, R, sd):
     return put_price
 
 def call(S, K, T, R, sd):
-    # Adjusted d1 formula to include the dividend yield (q)
     d1 = (math.log(S/K) + (R + 0.5 * sd**2) * T) / (sd * math.sqrt(T))
     d2 = d1 - sd * math.sqrt(T)
 
