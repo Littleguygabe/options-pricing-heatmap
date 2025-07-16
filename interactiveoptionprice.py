@@ -129,7 +129,6 @@ def submit_r(text):
     except ValueError:
         print(f"Invalid input for R: '{text}'. Please enter a number.")
 
-# --- Event Handling ---
 spotUpperSlider.on_changed(update)
 spotLowerSlider.on_changed(update)
 vUpperSlider.on_changed(update)
@@ -141,6 +140,6 @@ t_textbox.on_submit(submit_t)
 r_textbox.on_submit(submit_r)
 radio.on_clicked(update)
 
-# --- Initial Plot ---
+
 update(None)
 plt.show()
