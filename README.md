@@ -2,6 +2,11 @@
 
 This project provides an interactive tool to visualize European call and put option prices using the Black-Scholes model. It generates a heatmap that shows how the option price changes with variations in the underlying asset's spot price and volatility.
 
+This project is also available as a docker image:
+```bash
+docker pull littleguygabe/options-pricing-heatmap
+```
+
 ## Features
 
 *   **Interactive Heatmap:** Visualizes option prices for a range of spot prices and volatilities.
